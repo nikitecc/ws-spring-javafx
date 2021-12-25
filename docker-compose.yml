@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  mysql_db:
+    image: mysql
+    container_name: mysql_db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1705
+      MYSQL_DATABASE: wsdb
+      MYSQL_USER: w1
+      MYSQL_PASSWORD: Qw12345678

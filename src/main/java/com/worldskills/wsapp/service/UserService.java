@@ -12,4 +12,6 @@ public interface UserService {
     void deleteUser(Long id);
 
     void saveUser(User user);
+
+    User getRegisteredUser(String name, String password);
 }
