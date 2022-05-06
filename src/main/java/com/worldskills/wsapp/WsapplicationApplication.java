@@ -25,7 +25,7 @@ public class WsapplicationApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         ConfigurableApplicationContext applicationContext = SpringApplication.run(WsapplicationApplication.class);
-        FXMLLoader loader = new FXMLLoader(WsapplicationApplication.class.getResource("/view/login.fxml"));
+        FXMLLoader loader = new FXMLLoader(WsapplicationApplication.class.getResource("/view/registration.fxml"));
         loader.setControllerFactory(applicationContext::getBean);
         Scene scene = new Scene(loader.load(), 1000, 600, false, SceneAntialiasing.BALANCED);
 
